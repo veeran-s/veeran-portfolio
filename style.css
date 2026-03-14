@@ -13,8 +13,7 @@ body {
   color: #0f172a;
 }
 
-
-/* Navbar – slightly darker */
+/* Navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -45,8 +44,7 @@ body {
   color: #38bdf8;
 }
 
-/* Hero – subtle dark with soft gradient */
-/* Hero – light background, text clear ah theriyanum */
+/* Hero */
 .hero {
   padding: 70px 20px 70px;
   min-height: 60vh;
@@ -60,7 +58,7 @@ body {
   width: 100%;
   padding: 24px 28px;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.9);  /* innum white, glass blur kammi */
+  background: rgba(255, 255, 255, 0.9);
   border: 1px solid #e5e7eb;
   box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
   display: flex;
@@ -71,7 +69,7 @@ body {
 
 .hero-text {
   max-width: 600px;
-  color: #0f172a;   /* main text dark */
+  color: #0f172a;
 }
 
 .tag {
@@ -106,36 +104,29 @@ body {
   margin-bottom: 22px;
   color: #4b5563;
 }
-.hero-photo img {
-  width: 220px;        /* size adjust pannalaam */
-  height: 220px;       /* same width & height = perfect circle */
-  border-radius: 50%;  /* circle shape */
-  object-fit: cover;   /* face zoom correct ah irukka usefull */
-  border: 3px solid #2563eb; /* optional nice border */
-}
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
+/* Hero photo 2x2 grid */
 .hero-photo {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.hero-photo img {
-  width: 220px;
-  height: 220px;
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.photo-grid img {
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #2563eb;
 }
 
-
+/* Button */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -148,16 +139,7 @@ body {
   box-shadow: 0 10px 20px rgba(34, 197, 94, 0.25);
 }
 
-/* Photo */
-.hero-photo {
-  display: flex;
-  justify-content: center;
-}
-
-
- 
-/* Sections – light grey, cards on top */
-/* Sections – transparent feel */
+/* Sections */
 .section {
   padding: 40px 60px;
   background: transparent;
@@ -261,7 +243,6 @@ body {
 .project-link:hover {
   text-decoration: underline;
 }
-
 
 /* Contact */
 .contact-list {
