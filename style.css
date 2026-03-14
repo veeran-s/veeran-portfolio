@@ -13,7 +13,6 @@ body {
   color: #0f172a;
 }
 
-
 /* Navbar – slightly darker */
 .navbar {
   position: sticky;
@@ -45,7 +44,6 @@ body {
   color: #38bdf8;
 }
 
-/* Hero – subtle dark with soft gradient */
 /* Hero – light background, text clear ah theriyanum */
 .hero {
   padding: 50px 16px 40px;
@@ -54,7 +52,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 
 .hero-content {
   max-width: 1000px;
@@ -107,21 +104,8 @@ body {
   margin-bottom: 22px;
   color: #4b5563;
 }
-.hero-photo img {
-  width: 220px;        /* size adjust pannalaam */
-  height: 220px;       /* same width & height = perfect circle */
-  border-radius: 50%;  /* circle shape */
-  object-fit: cover;   /* face zoom correct ah irukka usefull */
-  border: 3px solid #2563eb; /* optional nice border */
-}
 
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 40px;
-}
-
+/* Hero photo – single round image */
 .hero-photo {
   display: flex;
   align-items: center;
@@ -136,7 +120,7 @@ body {
   border: 3px solid #2563eb;
 }
 
-
+/* Button with glow hover */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -147,29 +131,14 @@ body {
   font-weight: 600;
   font-size: 14px;
   box-shadow: 0 10px 20px rgba(34, 197, 94, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-/* Photo */
-.hero-photo {
-  display: flex;
-  justify-content: center;
+.btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 12px 26px rgba(56, 189, 248, 0.45);
 }
 
-
- .photo-frame {
-  width: 220px;
-  height: 240px;
-  border-radius: 24px;
-}
-
-
-.photo-frame img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* Sections – light grey, cards on top */
 /* Sections – transparent feel */
 .section {
   padding: 40px 60px;
@@ -234,14 +203,15 @@ body {
   margin-top: 10px;
 }
 
+/* Project cards with glow hover */
 .project-card {
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s;
 }
 
 .project-card:hover {
-  transform: translateY(-4px);
-  border-color: rgba(59, 130, 246, 0.7);
-  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.22);
+  transform: translateY(-4px) scale(1.01);
+  border-color: rgba(59, 130, 246, 0.85);
+  box-shadow: 0 0 22px rgba(59, 130, 246, 0.55);
 }
 
 .project-card h3 {
@@ -274,7 +244,6 @@ body {
 .project-link:hover {
   text-decoration: underline;
 }
-
 
 /* Contact */
 .contact-list {
@@ -310,12 +279,12 @@ body {
   }
 
   .hero {
-    padding: 30px 16px 30px;
+    padding: 24px 16px 24px;
   }
 
   .hero-content {
     flex-direction: column-reverse;
-    gap: 20px;
+    gap: 16px;
   }
 
   .section {
