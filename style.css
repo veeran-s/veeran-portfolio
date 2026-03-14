@@ -106,6 +106,13 @@ body {
   margin-bottom: 22px;
   color: #4b5563;
 }
+.hero-photo img {
+  width: 220px;        /* size adjust pannalaam */
+  height: 220px;       /* same width & height = perfect circle */
+  border-radius: 50%;  /* circle shape */
+  object-fit: cover;   /* face zoom correct ah irukka usefull */
+  border: 3px solid #2563eb; /* optional nice border */
+}
 
 
 .btn {
